@@ -1,63 +1,57 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" href="img/favicon.ico">
-    <title>Contact form</title>
-
-    <link rel="stylesheet" href="css/home.css">
-    <link rel="stylesheet" href="css/contact-form.css">
-    
-
-</head>
-<body>
-    <!-- Skip link -->
-    <a href="#main-content" class="skip-link"> Skip to the main content</a>
-
-    <!-- Navbar Section  -->
- <nav class="navbar"></nav>
-
- <div class="content" role="main" id="main-content">
-<!-- Heading section for the contact information -->
-    <h1>NEED TO GET IN TOUCH</h1>
-      <!-- Contact information list with microdata -->
-    <!-- I use itemscope attribute  here to define the scope of the item properties within the unordered list.  -->
-    <ul role="listbox" itemscope itemtype="https://schema.org/Person">
-      <li itemprop="name"><strong>Name:</strong> AR Design</li>
-      <li itemprop="jobTitle"><Strong>Title:</Strong>  clothing retail company</li>
-      <li itemprop="email"> <Strong>Email:</Strong> help@ardesign.com, customersupport@ardesign.com</li>
-      <li itemprop="telephone"><Strong>Phone:</Strong>  +1 343 200 0003</li>
-    </ul>
-    <h2 role="heading"> Address</h2>
-
-    <ul>
-      <!-- I use itemprop for schema markup here as well-->
-      <li itemscope itemtype="https://schema.org/PostalAddress">
-        <span itemprop="streetAddress"> Bay street</span>
-        <span itemprop="addressLocality"> 1822  Rose Dr,</span>
-        <span itemprop="addressRegion"> Ottawa,</span>
-        <span itemprop="postalCode"> A1C6 8C0</span>
-      </li>
-    </ul>
-  </div>
-  <div class="contact-section">
-    <h2 role="heading">Contact Us</h2>
-    <form action="thanks.html" aria-label="form">
-      <label for="fullname">Full Name</label>
-      <input id="fullname" type="text" placeholder="Full Name">
-      <label for="email">Email</label>
-      <input id="email" type="text" placeholder="Email">
-      <label for="subject">Subject</label>
-      <input id="subject" type="text" placeholder="Subject">
-      <label for="message">Your Message</label>
-      <textarea id="message"  aria-label="Message"></textarea>
-      <button id="button" role="button" type="submit">Send</button>
-    </form>
-  </div>
-    <footer role="contentinfo"></footer>
-    <script src="js/footer.js"></script>
-    <script src="js/nav.js"></script>
-</body>
+   <head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="icon" href="img/favicon.ico">
+      <title>Contact form</title>
+      <link rel="stylesheet" href="css/home.css">
+      <link rel="stylesheet" href="css/contact-form.css">
+   </head>
+   <body>
+      <!-- Skip link -->
+      <a href="#main-content" class="skip-link"> Skip to the main content</a>
+      <!-- Navbar Section  -->
+      <nav class="navbar"></nav>
+      <div class="content" role="main" id="main-content">
+         <!-- Heading section for the contact information -->
+         <h1>NEED TO GET IN TOUCH</h1>
+         <!-- Contact information list with microdata -->
+         <!-- I use itemscope attribute  here to define the scope of the item properties within the unordered list.  -->
+         <ul role="listbox" itemscope itemtype="https://schema.org/Person">
+            <li itemprop="name"><strong>Name:</strong> AR Design</li>
+            <li itemprop="jobTitle"><Strong>Title:</Strong>  clothing retail company</li>
+            <li itemprop="email"> <Strong>Email:</Strong> help@ardesign.com, customersupport@ardesign.com</li>
+            <li itemprop="telephone"><Strong>Phone:</Strong>  +1 343 200 0003</li>
+         </ul>
+         <h2 role="heading"> Address</h2>
+         <ul>
+            <!-- I use itemprop for schema markup here as well-->
+            <li itemscope itemtype="https://schema.org/PostalAddress">
+               <span itemprop="streetAddress"> Bay street</span>
+               <span itemprop="addressLocality"> 1822  Rose Dr,</span>
+               <span itemprop="addressRegion"> Ottawa,</span>
+               <span itemprop="postalCode"> A1C6 8C0</span>
+            </li>
+         </ul>
+      </div>
+      <div class="contact-section">
+         <h2 role="heading">Contact Us</h2>
+         <form action="thanks.html" aria-label="form">
+            <label for="fullname">Full Name</label>
+            <input id="fullname" type="text" placeholder="Full Name">
+            <label for="email">Email</label>
+            <input id="email" type="text" placeholder="Email">
+            <label for="subject">Subject</label>
+            <input id="subject" type="text" placeholder="Subject">
+            <label for="message">Your Message</label>
+            <textarea id="message"  aria-label="Message"></textarea>
+            <button id="button" role="button" type="submit">Send</button>
+         </form>
+      </div>
+      <footer role="contentinfo"></footer>
+      <script src="js/footer.js"></script>
+      <script src="js/nav.js"></script>
+   </body>
 </html>
