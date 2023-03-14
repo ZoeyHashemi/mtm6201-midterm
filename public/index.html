@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="icon" href="img/favicon.ico">
+	<title>AR Design</title>
+
+	<link  href="css/home.css" rel="stylesheet">
+</head>
+<body>
+	 <!-- Skip link -->
+	  <!-- Skip link: Provides a way for users to jump directly to the main content of the page -->
+	 <a href="#main-content" class="skip-link"> Skip to the main content</a>
+
+	<nav class="navbar" ></nav>
+	<!-- banner section -->
+	<!-- this tag displays the main heading and a link to discover more about the new arrivals, along with a carousel of images, I used divs to structure the content within the header tag -->
+	<header class="banner-section " role="banner">
+		<div class="content">
+			<!-- I highlight the new arrivals section with a main heading -->
+			<h1 class="heading">New Arrival</h1>
+			 <div class="sub.heading">
+				<a class="discover-link" href="#">Discover More</a>
+				<div class="owl-dots" aria-label="Carousel">
+					<span class="owl-dot" role="button" aria-label="Jump to slide 1"></span>
+					<span class="owl-dot" role="button" aria-label="Jump to slide 2"></span>
+					<span class="owl-dot" role="button" aria-label="Jump to slide 3"></span>
+					<span class="owl-dot" role="button" aria-label="Jump to slide 4"></span>
+				  </div>
+			</div>
+		</div>
+	</header>
+
+		<!--Section Product  -->
+		<!-- I used a section element with a class of "product" to wrap the product content.
+			 Within the section, there is an h2 element for the title, two button elements for navigation, 
+			 and a div with a class of "product-container" to hold the product cards.
+			  Each product card is contained within a div with a class of "product-card"
+			   and consists of a product image and product info. The product image and info are each contained within 
+			   their own divs with appropriate classes. -->
+		<section class="product" role="region" aria-label="Best Selling Products">
+			<h2 class="product-category">Best Selling</h2>
+			<button class="pre-btn" aria-label="Previous item"><img src="img/arrow.png" alt="arrow to back item"></button>
+			<button class="nxt-btn" aria-label="Next item"><img src="img/arrow.png" alt="arrow to next item"></button>
+			<div class="product-container">
+				<div class="product-card">
+					<div class="product-image">
+						<span class="favorite">
+							<img src="img/love.png" class="add-favorite" alt="heart icon ">
+						</span>
+						<img src="img/home/red-dress-320_x_452.png"
+							srcset="img/home/red-dress-320_x_452.png 320w,
+									img/home/red-dress-960_x_1357.png 960w,
+									img/home/red-dress-1280_x_1810.png 1280w"
+							sizes="(max-width: 767px) 100vw,
+									(min-width: 768px) and (max-width: 1279px) 50vw,
+									(min-width: 1280px) 40vw"
+							class="card-img"
+							alt="A woman with red dress">
+
+						<button class="card-btn">Add To Cart</button>
+					</div>
+					<div class="product-info">
+						<h2 class="product-name ">Joiya</h2>
+						<p class="product-short-info">Cap Sleeve Knee Length Dress</p>
+						<span class="price">EXTRA 30% OFF</span>
+						<br><span class="actual-price">$59.00</span><span class="sale-price">$41.30</span>
+
+					</div>
+				</div>
+				<div class="product-card">
+					<div class="product-image">
+						<span class="favorite">
+							<img src="img/love.png" class="add-favorite" alt="heart icon ">
+						</span>
+						<img src="img/product-2.jpg"
+							srcset="img/home/product-2-320_x_436.jpg 320w,
+									img/home/product-2-960_x_1309.jpg 960w,
+									img/home/product-2-1280_x_1749.jpg 1280w"
+							sizes="(max-width: 767px) 100vw,
+									(min-width: 768px) and (max-width: 1279px) 50vw,
+									(min-width: 1280px) 40vw"
+							class="card-img"
+							alt="A girl Model with creamy  sleeveless dress">
+
+						<button class="card-btn">Add To Cart</button>
+					</div>
+					<div class="product-info">
+						<h2 class="product-name ">Coraal</h2>
+						<p class="product-short-info">Heart Print Sleeveless Midi Dress</p> 
+						<span class="price">EXTRA 30% OFF</span>
+						<br><span class="actual-price">$56.00</span><span class="sale-price">$39.20</span>
+
+					</div>
+				</div>
+				<div class="product-card">
+					<div class="product-image">
+						<span class="favorite">
+							<img src="img/love.png" class="add-favorite" alt="heart icon ">
+						</span>
+						<img src="img/home/product-1-320_x_320.jpg"
+							srcset="img/home/product-1-320_x_320.jpg 320w,
+									img/home/product-1-960_x_960.jpg 960w,
+									img/home/product-1-1280_x_1280.jpg 1280w"
+							sizes="(max-width: 767px) 100vw,
+									(max-width: 991px) 50vw,
+									33.33vw"
+							class="card-img"
+							alt="A woman model with purple dress">
+
+
+						<button class="card-btn">Add To Cart</button>
+					</div>
+					<div class="product-info">
+						<h2 class="product-name">Maria</h2>
+						<p class="product-short-info">Knee Length Keyhole Dress</p>
+						<span class="price">EXTRA 30% OFF</span>
+						<br><span class="actual-price">$59.00</span><span class="sale-price">$41.30</span>
+
+					</div>
+				</div>
+
+				<div class="product-card">
+					<div class="product-image">
+						<span class="favorite">
+							<img src="img/love.png" class="add-favorite" alt="heart icon ">
+						</span>
+						<img src="img/product-2.jpg"
+							srcset="img/home/product-4-320_x_436.jpg 320w,
+									img/home/product-4-960_x_1309.jpg 960w,
+									img/home/product-4-1280_x_1749.jpg 1280w"
+							sizes="(max-width: 767px) 100vw,
+									(min-width: 768px) and (max-width: 1279px) 50vw,
+									(min-width: 1280px) 40vw"
+							class="card-img"
+							alt="A girl Model with black dress">
+
+						<button class="card-btn">Add To Cart</button>
+					</div>
+					<div class="product-info">
+						<h2 class="product-name">Marggoh</h2>
+						<p class="product-short-info">Blouson Sleeve Floral Maxi Dress</p> 
+						<span class="price">EXTRA 20% OFF</span>
+						<br><span class="actual-price">$59.00</span><span class="sale-price">$41.30</span>
+
+					</div>
+				</div>
+
+				<div class="product-card">
+					<div class="product-image">
+						<span class="favorite">
+							<img src="img/love.png" class="add-favorite" alt="heart icon ">
+						</span>
+						<img src="img/home/product-6-320_x_437.jpg"
+							srcset="img/home/product-6-320_x_437.jpg 320w,
+									img/home/product-6-960_x_1310.jpg 960w,
+									img/home/product-6-1280_x_1747.jpg 1280w"
+							sizes="(max-width: 767px) 100vw,
+									(max-width: 991px) 50vw,
+									33.33vw"
+							class="card-img"
+							alt="A woman model wearing a blue dress">
+
+						<button class="card-btn" >Add To Cart</button>
+					</div>
+					<div class="product-info">
+						<h2 class="product-name">Karenie</h2>
+						<p class="product-short-info">Blurred Floral Waisted Sleeveless Mini Dress</p> 
+						<span class="price">EXTRA 30% OFF</span>
+						<br><span class="actual-price">$66.00</span><span class="sale-price">$46.20</span>
+
+					</div>
+				</div>
+
+				<div class="product-card">
+					<div class="product-image">
+						<span class="favorite">
+							<img src="img/love.png" class="add-favorite" alt="heart icon ">
+						</span>
+						<img src="img/home/product-5-320_x_437.jpg"
+							srcset="img/home/product-5-320_x_437.jpg 320w,
+									img/home/product-5-960_x_1310.jpg 960w,
+									img/home/product-5-1280_x_1747.jpg 1280w"
+							sizes="(max-width: 767px) 100vw,
+									(max-width: 991px) 50vw,
+									33.33vw"
+							class="card-img"
+							alt="A woman model with floral top dress">
+
+						<button class="card-btn">Add To Cart</button>
+					</div>
+					<div class="product-info">
+						<h2 class="product-name">Amorita</h2>
+						<p class="product-short-info">Knee Length Keyhole Dress</p>
+						<span class="price">EXTRA 30% OFF</span>
+						<br><span class="actual-price">$59.00</span><span class="sale-price">$41.30</span>
+
+					</div>
+				</div>
+
+			</div>
+		</section>
+
+		<!-- collection -->
+		<!-- I've used a <section> element with a class of collection-container to separate this part of the webpage from other sections. 
+		Within the section, I've included multiple <a> elements, each representing a different product category.
+		For each product category, I've included an image using the <img> tag and a brief description using the <p> tag. I've also added a button using the <button> tag to encourage users to explore each category further.
+		 Additionally, I've used the <div> and <span> tags with appropriate attributes to create a carousel for the images. -->
+		<section class="collection-container" aria-label="Best-selling Products">
+			<a href="#" class="collection">
+				<img src="img/bestsellers-unsplash.jpeg" alt=" dresses on hangers-Unsplash">
+				<div class="owl-dots" aria-label="Carousel">
+					<span class="owl-dot"></span>
+					<span class="owl-dot"></span>
+					<span class="owl-dot"></span>
+					<span class="owl-dot"></span>
+				  </div>
+				<h2 class="collection-title">Best Sellers<br> </h2>
+				<h4 class="sub-heading">Discover more</h4>
+			</a>
+			<div class="collection">
+				<img srcset="
+				  img/home/accessories-unsplash-320_x_568.jpeg 320w,
+				  img/home/accessories-unsplash-960_x_1706.jpeg 960w,
+				  img/home/accessories-unsplash-1280_x_2275.jpeg 1280w"
+				  sizes="(max-width: 320px) 320px,
+						 (max-width: 960px) 960px,
+						 1280px"
+				  src="img/home/accessories-unsplash-960_x_1706.jpeg"
+				  alt="Woman accessories-Unsplash">
+				<p class="collection-title">Accessories</p>
+				<button class="collection-button" role="button" aria-label="Get inspired">Get Inspired</button>
+			  </div>
+			  <div class="collection">
+				<img srcset="
+				  img/home/nightdress-unsplash-320_x_480.jpeg 320w,
+				  img/home/nightdress-unsplash-960_x_1438.jpeg 960w,
+				  img/home/nightdress-unsplash-1280_x_1918.jpeg 1280w"
+				  sizes="(max-width: 320px) 320px,
+						 (max-width: 960px) 960px,
+						 1280px"
+				  src="img/home/nightdress-unsplash-960_x_1438.jpeg"
+				  alt="Night dress-Unsplash">
+				<p class="collection-title">Night Dress</p>
+				<button class="collection-button" role="button" aria-label="Get inspired">Get Inspired</button>
+			  </div>
+			  
+			  <div class="collection">
+				<img srcset="
+				  img/home/casual-unsplash-320_x_395.jpeg 320w,
+				  img/home/casual-unsplash-960_x_1187.jpeg 960w"
+				  sizes="(max-width: 320px) 320px,960px"
+				  src="img/home/casual-unsplash-960_x_1187.jpeg"
+				  alt="Casual woman dress-Unsplash">
+				<p class="collection-title">Casual Dress</p>
+				<button class="collection-button" role="button" aria-label="Get inspired">Get Inspired</button>
+			  </div>
+			  
+			  <div class="collection">
+				<img  srcset="
+				img/home/bagandshoes-unsplash-320_x_426.jpeg 320w,
+				img/home/bagandshoes-unsplash-960_x_1278.jpeg 960w"
+					 sizes="(max-width: 640px) 320px, 960px"
+					 alt="Bag and shoes-Unsplash">
+
+				<p class="collection-title">Bag and Shoes Collection</p>
+				<button class="collection-button" role="button" aria-label="Shop now">Shop Now</button>
+			</div>
+			
+	</section>
+	<!-- End Collection Section  -->
+
+	<!-- Customer Service Section  -->
+	<section class="customer-service" role="region" aria-label="Customer Services">
+		  <div class="icons">
+			<a href="#" class="services"  role="button" aria-label="Shipping">
+		  <img src="img/shipped.png" alt="Truck Shipping Icon ">
+		  <p class="service-info">Shipping</p>
+		</a>
+		<a href="#" class="services" role="button" aria-label="Stores">
+		  <img src="img/location.png" alt="Location Icon ">
+		  <p class="service-info">Stores</p>
+		</a>
+		<a href="#" class="services" role="button" aria-label="Customer Service">
+		  <img src="img/customer-service.png" alt=" Customer ServiceIcon ">
+		  <p class="service-info">Customer Service</p>
+		</a>
+		</div>
+	</section>
+
+		<!-- End Customer Service  -->
+
+		<!-- Footer Section -->
+	<!-- This section includes an image of the company logo,two unordered lists with containing quick links and services.
+		 Each list item has an anchor tag with the class name "footer-link" for different pages . Also I write a short text 
+		 as info of the company and put some social links as i designed in mockup I add a "Back to top "button for 
+		 make it the page more user friendly and accessible. besides , because I barrow
+		 all images from unsplash I put the link of the site in the footer  -->
+		<footer role="contentinfo"></footer> 
+     <!-- because the navbar and footer are repeat in all pages I linked them with Java -->
+	<script src="js/nav.js"></script>
+	 <script src="js/footer.js"></script> 
+	<script src="js/home.js"></script>
+</body>
+</html>

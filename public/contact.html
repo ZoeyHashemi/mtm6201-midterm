@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    	<link rel="icon" href="img/favicon.ico">
+    <title>Contact</title>
+
+    <link rel="stylesheet" href="css/home.css">
+    <link rel="stylesheet" href="css/contact.css">
+
+</head>
+<body>
+     <!-- Skip link -->
+     <a href="#main-content" class="skip-link"> Skip to the main content</a>
+
+     <!-- Navbar Section  -->
+  <nav class="navbar"></nav>
+<!-- Banner Section -->
+<header class="banner-section " role="banner">
+  <div class="content">
+      <h1 class="heading">contact Us</h1>
+       <div class="sub.heading">
+          <h2>We’re Here To Help </h2>
+      </div>
+  </div>
+</header>
+<!-- END Banner Section -->
+
+<!-- main  -->
+<!-- I set main part with different sections ,for make it accessible I give it ARIA role for each tag whenever it need
+The <section> elements have the implicit role of "region".-->
+<main role="main">
+   <!-- This is the heading for the Quick Actions section. -->
+    <h2 class="h2-main">Quick Actions</h2>
+    <!-- this section has 3 divs contain img icon and  h3-->
+    <section class="quick-actions">
+         <div class="actions">
+            <img src="img/address.png" alt="tracking icon">
+            <h3>Track your Package</h3>
+        </div>
+        <div class="actions">
+            <img src="img/product-return.png" alt="return icon">
+            <h3> Start A Return</h3>
+        </div>
+
+        <div class="actions">
+            <img src="img/contact-mail.png" alt="phone icon">
+            <h3> Contact Us</h3>
+        </div>
+    </section>
+    <!-- I created a help section with two blocks, the first block is designed as a button with Live chat and the second block is designed 
+      as a button with a link to contact-form.html page. To make the section accessible, I added ARIA roles like region, label, button, and tabindex where necessary. -->
+    <h2 class="h2-main">We Can Help you</h2>
+        <section class="hlep" role="region" aria-label="Help Section">
+            <div class="help-block" role="button" tabindex="0">
+                <img src="img/live-chat-unsplash.jpeg" alt="some people working with computer">
+                <div class="help-text">
+                <h3>Live Chat</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                <div class="chat-action">
+                    <h4>Let's Chat</h4>
+                    <img src="img/right-arrow.png" alt="go action icon">
+                </div>
+                </div>
+            </div>
+
+            <div class="help-block"  onclick="window.location='contact-form.html';">
+
+                <img src="img/contact-from-unsplash.jpeg" alt="filling paper form">
+                <div class="help-text">
+                    <h3>Contact Form</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                <div class="chat-action">
+                    <h4>Connect With Us</h4>
+                    <img src="img/right-arrow.png" alt="go action icon">
+                </div>
+                </div>
+            </div>
+        </section>
+        <!-- End Help section -->
+
+        <!-- Section Services -->
+        <!-- This section displays different services offered by the website. Each service is displayed as a block with an image and a button. 
+          To make the section accessible, ARIA roles are added to the section and the buttons. Additionally, each button has an aria-label attribute 
+          to provide a descriptive label for screen readers. -->
+        <section class="services"  role="region" aria-label="Services Section">
+            <div class="grid-container">
+              <div class="block-services">
+                <img src="img/sizing-unsplash.jpeg" alt="body measuring & hand">
+                <button class="button-services" role="button" aria-label="Sizing and Product Info">Sizing& Product Info</button>
+              </div>
+              <div class="block-services">
+                <img src="img/exchange-unsplash.jpeg" alt="return a box">
+                <button class="button-services" role="button" aria-label="Returns and Exchanges">Returns & Exchanges</button>
+              </div>
+              <div class="block-services">
+                <img src="img/order&shipping-unsplash.jpeg" alt="Delivery order">
+                <button class="button-services" role="button" aria-label="Orders and Shipping">Orders & shipping</button>
+              </div>
+              <div class="block-services">
+                <img src="img/support-center-unsplash.jpeg" alt="staff working with computer">
+                <button class="button-services" role="button" aria-label="Support Center Info">Support Center Info</button>
+              </div>
+              <div class="block-services">
+                <img src="img/peyment-unsplash.jpeg" alt=" online paying">
+                <button class="button-services"  role="button" aria-label="Services and Payment Plans">Services& Payment plans</button>
+              </div>
+              <div class="block-services">
+                <img src="img/FAQ-unsplash.jpeg" alt="question mark">
+                <button class="button-services" role="button" aria-label="FAQs and Help">FAQs& Help</button>
+              </div>
+            </div>
+          </section>
+          <!-- End Section Services -->
+
+          <!-- Sign Up Section -->
+          <!-- This section contains a sign-up form for the newsletter. It has a header, a button, and a form. 
+             I put ARIA label for accessibility purposes for button as well.-->
+          <section class="signup-section">
+            <div class="signup-box">
+                <h3>Sign up for our newsletter</h3>
+                <button class="signup-button" role="button" aria-label="signup-button">Sign Up</button>
+              </div>
+          </section>
+
+        </main>
+    <footer role="contentinfo"> </footer>
+    <script src="js/footer.js"></script>
+    <script src="js/nav.js"></script>
+</body>
+</html>

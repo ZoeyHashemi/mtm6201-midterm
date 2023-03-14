@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="img/favicon.ico">
+    <title>About</title>
+
+    <link rel="stylesheet" href="css/home.css">
+    <link rel="stylesheet" href="css/about.css">
+</head>
+<body>
+  <!-- Skip link -->
+      <a href="#main-content" class="skip-link"> Skip to the main content</a>
+
+       <!-- Navbar Section  -->
+    <nav class="navbar" role="navigation"></nav>
+ <!-- Banner Section -->
+ <!-- this tag displays the main heading and a link to discover more about the new arrivals, along with a carousel of images, 
+  I used divs to structure the content within the header tag -->
+<header class="banner-section " role="banner">
+    <div class="content">
+        <h1 class="heading">BEHIND OUR BRAND</h1>
+         <div class="sub.heading">
+            <h2>Welcome to AR Design</h2>
+
+        </div>
+    </div>
+</header>
+
+<!-- Main Section -->
+<main role="main" id="main-content">
+    <section class="general-info">
+        <div class="text">
+             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin condimentum lorem vel purus vulputate viverra. Mauris quis sem nisl. Sed viverra finibus eros id vehicula. Nulla ultrices risus non ante commodo, et vulputate mauris pharetra. Fusce volutpat porta ex in bibendum. Ut ac risus commodo, consequat tellus sed, fermentum urna. Suspendisse potenti. Suspendisse potenti. Ut a urna turpis.
+        Donec imperdiet risus nec purus tristique consequat. Aenean a vestibulum nibh. Sed hendrerit aliquet lectus, nec congue lorem hendrerit id. Sed eget tristique enim. Phasellus ut lectus sit amet velit commodo placerat a a magna. Nunc quis massa quam. Mauris mattis commodo metus quis suscipit. In hac habitasse platea dictumst.</p>
+        </div>
+        <button class="general-btn">Discover More</button>
+    </section>
+
+    <section class="our-story">
+        <div class="content-wrapper">
+          <img class="story-img" src="img/ourstory-unsplash.jpeg" alt="">
+          <div class="text">
+            <h2>Our Story</h2>
+            <p> Adipiscing elit. Proin condimentum lorem vel purus vu.
+            Donec imperdiet risus nec purus tristique consequat. Aenean a vestibulum nibh. Sed hendrerit aliquet lectus, nec congue lorem hendrerit id.</p>
+            <button class="story-btn">Discover More</button>
+          </div>
+        </div>
+      </section>
+
+      <section class="our-mission">
+        <div class="content-wrapper">
+          <img  src="img/our mission-unsplash.jpeg" alt="">
+          <div class="text">
+            <h2>Our Mission</h2>
+            <p>Donec imperdiet risus nec purus tristique consequat. Aenean a  Mauris mattis commodo metus quis suscipit. In hac habitasse platea dictumst.</p>
+            <button class="read-btn">Discover More</button>
+          </div>
+        </div>
+      </section>
+      
+      <section class="our-team">
+        <div class="content-wrapper">
+          <img src="img/our-team.jpeg" alt="">
+          <div class="text">
+            <h2>Our Team</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin condimentum lorem vpotenti. Suspendisse potenti. Ut a urna turpis.</p>
+            <button class="read-btn">Discover More</button>
+          </div>
+        </div>
+      </section>
+
+</main>
+    <footer role="contentinfo"> </footer>
+    <script src="js/footer.js"></script>
+    <script src="js/nav.js"></script>
+<!-- Code injected by live-server -->
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+</body>
+</html>

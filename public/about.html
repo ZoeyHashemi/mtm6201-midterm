@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="img/favicon.ico">
+    <title>About</title>
+
+    <link rel="stylesheet" href="css/home.css">
+    <link rel="stylesheet" href="css/about.css">
+</head>
+<body>
+  <!-- Skip link -->
+      <a href="#main-content" class="skip-link"> Skip to the main content</a>
+
+       <!-- Navbar Section  -->
+    <nav class="navbar"></nav>
+ <!-- Banner Section -->
+ <!-- this tag displays the main heading and a link to discover more about the new arrivals, along with a carousel of images, 
+  I used divs to structure the content within the header tag -->
+<header class="banner-section " role="banner">
+    <div class="content">
+        <h1 class="heading">BEHIND OUR BRAND</h1>
+         <div class="sub.heading">
+            <h2>Welcome to AR Design</h2>
+
+        </div>
+    </div>
+</header>
+
+<!-- Main Section -->
+<!-- I organized this part to 4 <sections> and each section has contains a <div> that
+  separertes text and images  -->
+<main role="main" id="main-content">
+    <section class="general-info" role="region" aria-label="General Information">
+        <div class="text">
+             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin condimentum lorem vel purus vulputate viverra. Mauris quis sem nisl. Sed viverra finibus eros id vehicula. Nulla ultrices risus non ante commodo, et vulputate mauris pharetra. Fusce volutpat porta ex in bibendum. Ut ac risus commodo, consequat tellus sed, fermentum urna. Suspendisse potenti. Suspendisse potenti. Ut a urna turpis.
+        Donec imperdiet risus nec purus tristique consequat. Aenean a vestibulum nibh. Sed hendrerit aliquet lectus, nec congue lorem hendrerit id. Sed eget tristique enim. Phasellus ut lectus sit amet velit commodo placerat a a magna. Nunc quis massa quam. Mauris mattis commodo metus quis suscipit. In hac habitasse platea dictumst.</p>
+        </div>
+        <button class="read-btn" aria-label="Discover More about this topic" role="button">Discover More</button>
+    </section>
+
+    <section class="our-story" role="region" aria-label="Our Story">
+        <div class="content-wrapper">
+          <img src="img/about/ourstory-unsplash-320_x_240.jpeg"
+              srcset="img/about/ourstory-unsplash-320_x_240.jpeg 320w,
+                      img/about/ourstory-unsplash-960_x_720.jpeg 960w,
+                      img/about/ourstory-unsplash-1280_x_960.jpeg 1280w"
+              sizes="(max-width: 767px) 100vw,
+                      (max-width: 991px) 50vw,
+                      33.33vw"
+              class="story-img"
+              alt="Collection of women's attire">
+
+          <div class="text">
+            <h2>Our Story</h2>
+            <p> Adipiscing elit. Proin condimentum lorem vel purus vu.
+            Donec imperdiet risus nec purus tristique consequat. Aenean a vestibulum nibh. Sed hendrerit aliquet lectus, nec congue lorem hendrerit id.</p>
+            <button class="read-btn" aria-label="Discover More about our story" role="button">Discover More</button>
+          </div>
+        </div>
+      </section>
+
+      <section class="our-mission" role="region" aria-label="Our Mission">
+        <div class="content-wrapper">
+          <img src="img/about/our-mission-unsplash-320_x_212.jpeg"
+          srcset="img/about/our-mission-unsplash-320_x_212.jpeg 320w,
+                  img/about/our-mission-unsplash-960_x_638.jpeg 960w,
+                  img/about/our-mission-unsplash-1280_x_851.jpeg 1280w"
+          sizes="(max-width: 575px) 90vw,
+                 (min-width: 576px) and (max-width: 767px) 80vw,
+                 (min-width: 768px) and (max-width: 991px) 50vw,
+                 (min-width: 992px) and (max-width: 1199px) 33.33vw,
+                 (min-width: 1200px) 25vw"
+          alt="A white woman bag with sunglasses">
+     
+          <div class="text">
+            <h2>Our Mission</h2>
+            <p>Donec imperdiet risus nec purus tristique consequat. Aenean a  Mauris mattis commodo metus quis suscipit. In hac habitasse platea dictumst.</p>
+            <button class="read-btn" aria-label="Discover More about our story" role="button">Discover More</button>
+          </div>
+        </div>
+      </section>
+
+      <section class="our-team" role="region" aria-label="Our Team">
+        <div class="content-wrapper">
+          <img src="img/about/our-team-320_x_213.jpeg"
+     srcset="img/about/our-team-320_x_213.jpeg 320w,
+             img/about/our-team-960_x_639.jpeg,
+             img/about/our-team-1280_x_853.jpeg 1280w"
+     sizes="(max-width: 575px) 90vw,
+            (min-width: 576px) and (max-width: 767px) 80vw,
+            (min-width: 768px) and (max-width: 991px) 50vw,
+            (min-width: 992px) and (max-width: 1199px) 33.33vw,
+            (min-width: 1200px) 25vw"
+     alt="Staff on a meeting">
+
+          <div class="text">
+            <h2>Our Team</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin condimentum lorem vpotenti. Suspendisse potenti. Ut a urna turpis.</p>
+            <button class="read-btn" aria-label="Discover More about our story" role="button">Discover More</button>
+          </div>
+        </div>
+      </section>
+
+</main>
+    <footer role="contentinfo"></footer>
+    <script src="js/footer.js"></script>
+    <script src="js/nav.js"></script>
+</body>
+</html>
