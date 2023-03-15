@@ -24,7 +24,7 @@ const createFooter =() => {
 		  <li><a href="#" class="footer-link">Track a Package</a></li>
 		  <li><a href="#" class="footer-link">Return & Exchange</a></li>
 		  <li><a href="#" class="footer-link">Gift Cards</a></li>
-		  <li><a href="#" class="footer-link">Check Gift Card Balance</a></li>
+		  <li><a href="#" class="footer-link">Gift Card Balance</a></li>
 		  <li><a href="#" class="footer-link">Current Promotions</a></li>
 		  <li><a href="#" class="footer-link">Return & Exchange</a></li>
 		  <li><a href="#" class="footer-link">Return & Exchange</a></li>

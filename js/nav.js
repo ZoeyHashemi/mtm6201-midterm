@@ -2,7 +2,9 @@ const createNav =()=> {
    let nav = document.querySelector('.navbar');
    nav.innerHTML = `
    <div class="ribbon">
+   <div class="text-container">
    <p>Extera 30% off on all products - Limited time offer!</p>
+   </div>
 </div>
 <div class="nav">
    <button class="nav-toggle">
@@ -11,10 +13,10 @@ const createNav =()=> {
    <span class="hamburger"></span>
    </button>
    </button>
-   <img src="img/main-logo.png"  class="brand-logo" alt="AR Design logo">
+   <a href="index.html "><img src="img/main-logo.png"  class="brand-logo" alt="AR Design logo">
    <div class="nav-items">
       <div class="search">
-         <img src="img/loupe.png " alt="user icon"></a>
+      <a href="#"><img src="img/loupe.png" alt="user icon"></a>
       </div>
       <a href="#"><img src="img/user.png" alt="user icon"></a>
       <a href="#"><img src="img/shopping-bag.png" alt=" shopping bag icon"></a>
